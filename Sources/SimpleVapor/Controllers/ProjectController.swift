@@ -2,7 +2,7 @@ import Vapor
 
 struct ProjectController: RouteCollection{
 
-    var projectStorage: ProjectStorage
+    var projectStorage: ProjectStorage =  ProjectStorage()
 
     func boot(routes: any RoutesBuilder) throws{
         let projects = routes.grouped("projects")
