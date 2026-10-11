@@ -8,7 +8,7 @@ struct ProjectController: RouteCollection{
         let projects = routes.grouped("projects")
 
         projects.get { req async throws in
-        return projectStorage.getProjectsTitles()
+        return projectStorage.getAllProjectsList()
         }
     }
 }
